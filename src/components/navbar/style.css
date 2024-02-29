@@ -1,0 +1,37 @@
+.container{
+    max-width: 1536px;
+    height: 60px;
+    /* background-color: black; */
+   
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.my-link{
+    
+}
+
+.my-link:hover .rotate-on-hover {
+    transform: rotate(360deg);
+    transition: all 0.25s ease-in-out;
+}
+
+.code{
+    display: none;
+}
+
+
+.my-link:hover .code{
+    display: inline-block;
+}
+
+.my-link:hover .name {
+    display: none;
+}
+
+.social{
+    width: 120px;
+}
