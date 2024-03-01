@@ -6,15 +6,30 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Container, Row, Col } from "react-bootstrap";
 import CopyrightIcon from "@mui/icons-material/Copyright";
+import { motion } from "framer-motion";
+import { Sidebar } from "./sidebar";
 
 export const Navbar = () => {
   return (
     <Container className="container">
       <Row>
-        <Col className=" gx-5 gy-3 d-flex flex-row justify-content-between">
+        <Col lg={1} className="bg-warning">
+          <Sidebar />
+        </Col>
+        <Col
+          lg={11}
+          className="gx-5 gy-3 d-flex flex-row justify-content-between"
+        >
           <a href="#" className="d-flex my-link">
             <CopyrightIcon className="me-1 rotate-on-hover" />
-            <span className="name">Aroob Aziz</span>
+            <motion.span
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1, x: 2 }}
+              transition={{ duration: 0.5 }}
+              className="name"
+            >
+              Aroob Aziz
+            </motion.span>
             <span className="code">Code by Aroob Aziz</span>
           </a>
           <div className="social d-flex justify-content-around ">
