@@ -13,12 +13,12 @@ export const Navbar = () => {
   return (
     <Container className="container">
       <Row>
-        <Col lg={1} className="bg-warning">
+        <Col lg={1} className="gx-0">
           <Sidebar />
         </Col>
         <Col
           lg={11}
-          className="gx-5 gy-3 d-flex flex-row justify-content-between"
+          className="gx-5 gy-4 d-flex flex-row justify-content-between"
         >
           <a href="#" className="d-flex my-link">
             <CopyrightIcon className="me-1 rotate-on-hover" />

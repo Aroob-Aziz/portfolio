@@ -5,16 +5,16 @@ import { Hero } from "./components/hero";
 function App() {
   return (
     <div>
-      <section>
+      <section id="Homepage">
         <Navbar />
       </section>
-      <section>
+      <section id="About">
         <Hero />
       </section>
-      <section>Services</section>
-      <section>Parallax</section>
-      <section>Projects</section>
-      <section>Contact</section>
+      <section id="Experience">Experience</section>
+      <section id="Projects">Projects</section>
+      <section id="Contact">Contact</section>
+      {/* <section>Contact</section> */}
     </div>
   );
 }
