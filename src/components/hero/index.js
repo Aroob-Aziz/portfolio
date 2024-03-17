@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <div className="hero">
       <Row className="h-100 g-0">
-        <Col lg={5} className="d-flex p-5 flex-row justify-content-center ">
+        <Col lg={5} className="d-flex p-5 flex-column align-items-center ">
           <div className="card">
             <div className="card-info pt-5 d-flex flex-column justify-content-center align-items-center">
               <p>Aroob Aziz</p>
@@ -22,6 +22,17 @@ export const Hero = () => {
               </div>
             </div>
           </div>
+          <button className="btn mt-5" type="button">
+            <strong>CONTACT ME</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
         </Col>
       </Row>
 
