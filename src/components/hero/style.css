@@ -5,6 +5,7 @@
     position: relative; 
     top: 100px;
     background: linear-gradient(180deg, #0c0c1d 20%,  #111132 );
+    overflow: hidden;
     
 }
 
@@ -137,7 +138,7 @@
    }
    
    .card:hover .card-info {
-    color: #e81cff;
+    /* color: #e81cff; */
     transition: color 1s;
    }
 
@@ -160,6 +161,7 @@
     background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
     background-origin: border-box;
     background-clip: content-box, border-box;
+    z-index: 1;
   }
   
   #container-stars {
@@ -206,7 +208,8 @@
   
   .btn:hover #container-stars {
     z-index: 1;
-    background-color: #212121;
+    background-color: #0c0c1d;
+    /* background-color: linear-gradient(180deg, #0c0c1d 20%,  #111132 ); */
   }
   
   .btn:hover {
@@ -312,3 +315,19 @@
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
   }
+
+.slidingDiv{
+    position: relative;
+}
+
+.slidingTextContainer {
+    position: absolute;
+    font-size: 30vh;
+    top: -140px;
+    /* bottom: -100px; */
+    white-space: nowrap;
+    color: #ffffff57;
+    width: 50%;
+    font-weight: bold;
+    
+}
