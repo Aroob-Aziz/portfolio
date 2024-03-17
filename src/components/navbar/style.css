@@ -1,7 +1,10 @@
 .container{
     max-width: 1536px;
-    height: 60px;
-    position: fixed;  
+    height: 100px;
+    z-index: 100;
+    position: fixed;
+   
+    
 }
 
 a{

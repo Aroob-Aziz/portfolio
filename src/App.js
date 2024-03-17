@@ -7,10 +7,9 @@ function App() {
     <div>
       <section id="Homepage">
         <Navbar />
-      </section>
-      <section id="About">
         <Hero />
       </section>
+      <section id="About">{/* <Hero /> */}</section>
       <section id="Experience">Experience</section>
       <section id="Projects">Projects</section>
       <section id="Contact">Contact</section>

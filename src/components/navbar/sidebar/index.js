@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Links } from "../links/Links";
 import { ToggleButton } from "./toggle/ToggleButton";
 import "./style.css";
-import { Circle } from "@mui/icons-material";
 
 const variants = {
   open: {
