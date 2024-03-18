@@ -20,15 +20,33 @@ const cardVariants = {
 
 const slidingVariants = {
   initial: {
-    x: 0,
+    x: "0%",
   },
   animate: {
-    x: ["-460%", "220%"],
-
+    x: ["230%", "-470%"],
     transition: {
       duration: 20,
       repeat: Infinity,
-      repeatType: "mirror",
+      repeatType: "loop",
+      repeatDelay: 6,
+      ease: "linear",
+    },
+  },
+};
+
+const slideVariants = {
+  initial: {
+    x: "0",
+  },
+  animate: {
+    x: ["230%", "-470%"],
+
+    transition: {
+      delay: 14,
+      duration: 20,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 6,
       ease: "linear",
     },
   },
@@ -81,6 +99,18 @@ export const Hero = () => {
             </div>
           </motion.button>
         </Col>
+        <Col lg={7} className="h-75 d-flex flex-column justify-content-center">
+          <div>
+            <h3 className="desc">I develop things for the web</h3>
+            <p>
+              "As a software engineer specializing in web development, I create
+              user-friendly solutions.
+              <br />
+              Dedicated to bringing ideas to life online, I'm skilled in
+              crafting the digital experience."
+            </p>
+          </div>
+        </Col>
       </Row>
       <Row className="g-0  h-25">
         <Col className="slidingDiv">
@@ -90,7 +120,15 @@ export const Hero = () => {
             initial="initial"
             animate="animate"
           >
-            Write Content Creator Influencer
+            Passionate Frontend Web Developer
+          </motion.div>
+          <motion.div
+            className="slidingTextContainer"
+            variants={slideVariants}
+            initial="initial"
+            animate="animate"
+          >
+            Industrious Software Developer
           </motion.div>
         </Col>
       </Row>
