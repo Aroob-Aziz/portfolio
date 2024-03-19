@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 const cardVariants = {
@@ -54,9 +54,63 @@ const slideVariants = {
 
 export const Hero = () => {
   return (
-    <div className="hero">
+    <Container className="hero">
       <Row className="h-75 g-0">
-        <Col lg={5} className="d-flex p-5 flex-column align-items-center ">
+        <Col
+          lg={7}
+          className=" ps-5 pt-5 d-flex flex-column  align-items-center"
+        >
+          <div className="pt-5">
+            <div className="d-flex flex-row ">
+              <button className="button" data-text="Awesome">
+                <span className="actual-text">
+                  &nbsp;I develop things for the web&nbsp;
+                </span>
+                <span aria-hidden="true" className="hover-text">
+                  I develop things for the web
+                </span>
+              </button>
+              <div className="loading ms-3">
+                <svg width="64px" height="48px">
+                  <polyline
+                    points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
+                    id="back"
+                  ></polyline>
+                  <polyline
+                    points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
+                    id="front"
+                  ></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <p className="mt-4 ms-2">
+              As a software engineer specializing in web development, I create
+              user-friendly solutions.
+              <br />
+              Dedicated to bringing ideas to life online, I'm skilled in
+              crafting the digital experience.
+            </p>
+            <motion.button
+              className="btn mt-5 ms-2"
+              type="button"
+              variants={cardVariants}
+              animate="animate"
+              initial="initial"
+            >
+              <strong>CONTACT ME</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </motion.button>
+          </div>
+        </Col>
+        <Col lg={5} className="d-flex ps-5 pt-5 flex-column  ">
           <motion.div
             className="card"
             variants={cardVariants}
@@ -81,35 +135,6 @@ export const Hero = () => {
               </motion.div>
             </motion.div>
           </motion.div>
-          <motion.button
-            className="btn mt-5"
-            type="button"
-            variants={cardVariants}
-            animate="animate"
-            initial="initial"
-          >
-            <strong>CONTACT ME</strong>
-            <div id="container-stars">
-              <div id="stars"></div>
-            </div>
-
-            <div id="glow">
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-          </motion.button>
-        </Col>
-        <Col lg={7} className="h-75 d-flex flex-column justify-content-center">
-          <div>
-            <h3 className="desc">I develop things for the web</h3>
-            <p>
-              "As a software engineer specializing in web development, I create
-              user-friendly solutions.
-              <br />
-              Dedicated to bringing ideas to life online, I'm skilled in
-              crafting the digital experience."
-            </p>
-          </div>
         </Col>
       </Row>
       <Row className="g-0  h-25">
@@ -134,6 +159,6 @@ export const Hero = () => {
       </Row>
 
       {/* **pyramid** */}
-    </div>
+    </Container>
   );
 };
