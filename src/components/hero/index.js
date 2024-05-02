@@ -89,7 +89,7 @@ export const Hero = () => {
               </div>
             </div>
 
-            <p className="mt-4 ms-2">
+            <p className=" styledP mt-4 ms-2">
               As a software engineer specializing in web development, I create
               user-friendly solutions.
               <br />

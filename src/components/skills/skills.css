@@ -43,12 +43,13 @@
 
   .book {
    
-    margin: 30% auto 0 auto;
+    margin: 28% auto 0 auto;
     position: relative;
     border-radius: 10px;
-    width: 400px;
+    width: 50%;
     height: 450px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-color: white;
     -webkit-box-shadow: 1px 1px 12px #000;
     box-shadow: 1px 1px 12px #000;
     -webkit-transform: preserve-3d;
@@ -66,14 +67,16 @@
     -ms-flex-pack: center;
     justify-content: center;
     color: #000;
-    box-shadow: 0px 0px 30px 1px #F028FD;
+    box-shadow: 0px 0px 30px 1px #40c9ff;
+   
   }
   
   .cover {
     box-shadow: 0px 0px 30px 1px #F028FD;
     top: 0;
     position: absolute;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-color: #0c0c1d;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -103,8 +106,31 @@
     -ms-transform: rotatey(-80deg);
     transform: rotatey(-80deg);
   }
+
+
+  .spinner {
+   
+    background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
+    width: 100px;
+    height: 100px;
+    animation: spinning82341 1.7s linear infinite;
+    text-align: center;
+    border-radius: 50px;
+    filter: blur(1px);
+    box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+  }
   
-  p {
-    font-size: 20px;
-    font-weight: bolder;
+  .spinner1 {
+    /* background-color: rgb(36, 36, 36); */
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    filter: blur(10px);
+  }
+  
+  @keyframes spinning82341 {
+    to {
+      transform: rotate(360deg);
+    }
   }

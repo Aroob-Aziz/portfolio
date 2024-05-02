@@ -1,8 +1,7 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { LinearProgress, Typography, Box } from "@mui/material";
-import "./styles.css";
-import { color } from "framer-motion";
+import "./skills.css";
 
 const SkillBar = ({ skill, proficiency, color }) => (
   <Box sx={{ mb: 2 }}>
@@ -38,7 +37,7 @@ export const Skills = () => {
   return (
     <Container className="styledContainer">
       <Row>
-        <Col lg={6} className="pt-5">
+        <Col lg={6} className="pt-5 ps-5">
           <div className="progressBars">
             <div class="loader"></div>
             {/* <Typography variant="h4" gutterBottom>
@@ -56,16 +55,27 @@ export const Skills = () => {
         </Col>
         <Col lg={6}>
           <div class="book">
-            <p>Hello</p>
-            <div class="cover">
-              <Typography variant="h6">
-                &lt;&gt;About Me&lt;/&gt;{" "}
-                {/* This renders as <p>About Me</p> */}
+            <p className="ms-5">
+              I'm a software engineer specializing in frontend development, with
+              a keen eye for creating responsive and user-friendly web
+              interfaces. My expertise includes JavaScript frameworks like
+              React, and I thrive in environments where innovative UI/UX
+              solutions are valued.
+            </p>
+            <div class="cover d-flex flex-column">
+              <div class="spinner">
+                <div class="spinner1"></div>
+              </div>
+              <Typography
+                variant="h6"
+                className="mt-3"
+                style={{ color: "white" }}
+              >
+                &lt;&gt;About Me&lt;/&gt; <br />
+                <p className="ms-4" style={{ fontSize: "14px" }}>
+                  Kindly hover..
+                </p>
               </Typography>
-              {/* <p>
-                <br />
-                Kindly hover
-              </p> */}
             </div>
           </div>
         </Col>
