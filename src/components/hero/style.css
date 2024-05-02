@@ -6,7 +6,7 @@
     top: 100px;
     background: linear-gradient(180deg, #0c0c1d 20%,  #111132 );
     overflow: hidden;
-    
+    z-index: 1;
 }
 
 /* polygon */

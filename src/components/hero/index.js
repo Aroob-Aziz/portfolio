@@ -23,12 +23,12 @@ const slidingVariants = {
     x: "0%",
   },
   animate: {
-    x: ["230%", "-470%"],
+    x: ["250%", "-520%"],
     transition: {
       duration: 20,
       repeat: Infinity,
       repeatType: "loop",
-      repeatDelay: 6,
+      repeatDelay: 8,
       ease: "linear",
     },
   },
@@ -39,14 +39,14 @@ const slideVariants = {
     x: "0",
   },
   animate: {
-    x: ["230%", "-470%"],
+    x: ["250%", "-480%"],
 
     transition: {
       delay: 14,
       duration: 20,
       repeat: Infinity,
       repeatType: "loop",
-      repeatDelay: 6,
+      repeatDelay: 8,
       ease: "linear",
     },
   },
@@ -60,7 +60,12 @@ export const Hero = () => {
           lg={7}
           className=" ps-5 pt-5 d-flex flex-column  align-items-center"
         >
-          <div className="pt-5">
+          <motion.div
+            className="pt-5"
+            variants={cardVariants}
+            initial="initial"
+            animate="animate"
+          >
             <div className="d-flex flex-row ">
               <button className="button" data-text="Awesome">
                 <span className="actual-text">
@@ -108,11 +113,11 @@ export const Hero = () => {
                 <div class="circle"></div>
               </div>
             </motion.button>
-          </div>
+          </motion.div>
         </Col>
         <Col lg={5} className="d-flex ps-5 pt-5 flex-column  ">
           <motion.div
-            className="card"
+            className="ms-5 card"
             variants={cardVariants}
             initial="initial"
             animate="animate"
@@ -138,7 +143,7 @@ export const Hero = () => {
         </Col>
       </Row>
       <Row className="g-0  h-25">
-        <Col className="slidingDiv">
+        <Col className=" slidingDiv">
           <motion.div
             className="slidingTextContainer"
             variants={slidingVariants}
