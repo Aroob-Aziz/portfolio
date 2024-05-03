@@ -3,6 +3,16 @@
     max-width: 1536px;
     /* background-color: yellow; */
     position: relative;
+    overflow: hidden;
+}
+
+.circles{
+  position: absolute;
+  z-index: -1;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .progressBars{
@@ -134,3 +144,5 @@
       transform: rotate(360deg);
     }
   }
+
+
