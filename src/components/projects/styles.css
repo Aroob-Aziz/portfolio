@@ -1,0 +1,62 @@
+.styledContainer2{
+    height: 100vh;
+    max-width: 1536px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#progress {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+    /* stroke: var(--accent); */
+    stroke: white;
+  }
+  
+  .bg2 {
+    opacity: 0.3;
+  }
+  
+  .indicator {
+    /* stroke: var(--accent); */
+    stroke: white;
+  }
+  
+  ul.scrollable-list {
+    display: flex;
+    list-style: none;
+    height: 400px;
+    overflow-x: scroll;
+    padding: 20px 20px;
+    /* flex: 0 0 300px; */
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: white; */
+    overflow-y: hidden;
+
+  }
+  
+  ul.scrollable-list::-webkit-scrollbar {
+    height: 5px;
+    /* background: #fff3; */
+    background: white;
+  }
+  
+  ul.scrollable-list::-webkit-scrollbar-thumb {
+    background: white;
+    /* background: red; */
+  }
+  
+  .card2 {
+    flex: 0 0 25%;
+    height: 350px;
+    border-radius: 5%;
+    background: pink;
+    margin-right: 20px;
+  }
+  
+  .card:last-of-type {
+    margin-right: 0;
+  }
+  
